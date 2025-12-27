@@ -1,0 +1,78 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #6c63ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #584fe0;
+}
+
+.filtros {
+  margin: 20px 0;
+}
+
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #2b2b40;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #3a3a5a;
+}
+
+tr:nth-child(even) {
+  background: #24243a;
+}
+
+.status {
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.novo {
+  background: #ff9800;
+}
+
+.contato {
+  background: #03a9f4;
+}
+
+.convertido {
+  background: #4caf50;
+}

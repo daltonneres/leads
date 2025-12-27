@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Leads</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <header>
+    <h1>📊 Painel de Leads</h1>
+    <button onclick="exportarCSV()">⬇️ Exportar CSV</button>
+  </header>
+
+  <section class="filtros">
+    <select id="filtroInteresse" onchange="filtrarLeads()">
+      <option value="">Todos os interesses</option>
+      <option value="Site">Criação de Sites</option>
+      <option value="Sistema">Sistema Web</option>
+      <option value="Marketing">Marketing Digital</option>
+    </select>
+  </section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>WhatsApp</th>
+        <th>Interesse</th>
+        <th>Cidade</th>
+        <th>Status</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaLeads"></tbody>
+  </table>
+
+  <script src="admin.js"></script>
+</body>
+</html>
